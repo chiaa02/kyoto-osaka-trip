@@ -1,0 +1,130 @@
+<!doctype html>
+<!-- Website Template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exploring Kyoto & Osaka</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
+	<script type="text/javascript" src="js/mobile.js"></script>
+</head>
+
+<body>
+
+  <!-- Welcome Screen -->
+  <div id="welcome-screen" style="text-align: center; padding: 50px;">
+    <h2>Welcome! Please enter your name to explore my website.</h2>
+    <input type="text" id="username" placeholder="Your name">
+    <button onclick="showSite()">Enter</button>
+    <p id="error-message" style="color: red;"></p>
+  </div>
+
+<div id="main-content" style="display: none;">
+
+    <p style="text-align:center; background-color:#f0f0f0; padding:10px; font-size:14px;">
+      Original template:
+      <a href="https://plantillashtmlgratis.com/en/todas-las-plantillas/plantilla/free-html-css-templates-for-downloading-mustacchio" target="_blank">
+      Mustacchio Template
+      </a>
+    </p>
+
+	<div id="header">
+
+		<h1 class="main-title">Exploring Kyoto & Osaka</h1>
+
+		<ul id="navigation">
+			<li class="selected">
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="about.html">About</a>
+			</li>
+			<li>
+				<a href="gallery.html">Gallery</a>
+			</li>
+			<li>
+				<a href="blog.html">Blog</a>
+			</li>
+		</ul>
+
+	</div>
+
+	<div id="body">
+
+		<div id="featured">
+
+			<img src="images/topofkyoto.jpeg" alt="" width="50px" height="600px">
+
+			<div style="margin-top: -200px;">
+
+				<h2>Exploring Kyoto & Osaka</h2>
+
+				<span>July 2025</span>
+				<span>📍 Kyoto & Osaka, Japan</span>
+
+				<br><br>
+
+				<a href="about.html" class="more">Read More</a>
+
+			</div>
+
+		</div>
+
+		<div class="user-input" style="margin-top:30px; text-align:center;">
+			<p id="greeting" style="font-weight:bold; margin-top:10px;"></p>
+		</div>
+
+		<ul>
+
+			<li>
+				<img src="images/friends.jpeg" alt="Friends at Fushimi Inari" width="300px" height="300px">
+			</li>
+
+			<li>
+				<img src="images/kyotogoldentemple.jpeg" alt="Kinkaku-ji Temple" width="300px" height="300px">
+			</li>
+
+			<li>
+				<img src="images/dotonbori.jpeg" alt="Dotonbori at Night" width="300px" height="300px">
+			</li>
+
+		</ul>
+
+	</div>
+
+	<div id="footer">
+		<div>
+			<p>Created by Priyanshi Mishra | Student ID: 24229564</p>
+		</div>
+	</div>
+
+</div>
+
+<script>
+
+function showSite() {
+
+    var name = document.getElementById("username").value.trim();
+
+    if(name !== ""){
+
+        document.getElementById("welcome-screen").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+
+        alert("Welcome, " + name + "! Join me as I take you through my unforgettable trip to Kyoto and Osaka. I hope you enjoy exploring my website!");
+
+    }
+
+    else{
+
+        document.getElementById("error-message").innerText = "Please enter your name to continue.";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
